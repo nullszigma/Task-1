@@ -1,0 +1,5 @@
+TaskProject/bin/
+TaskProject/obj/
+XUnitTestProject/bin/
+XUnitTestProject/obj/
+.vs/
