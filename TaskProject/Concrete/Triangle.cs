@@ -21,7 +21,7 @@ namespace TaskProject.Concrete
             if (a > b + c || b > a + c || c > a + b)
             {
                 throw new ArgumentOutOfRangeException("Value", "Side cannot be longer than sum of other two sides");
-            }              
+            }
 
             A = a;
             B = b;
@@ -30,11 +30,11 @@ namespace TaskProject.Concrete
 
         public override double GetArea()
         {
-            var p = (A + B + C) / 2;
+            var p = (A + B + C) / 2.0;
 
-            return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+            return Math.Round(Math.Sqrt(p * (p - A) * (p - B) * (p - C)), 2);
         }
-        
+
         /// <summary>
         /// Является ли треугольник прямоугольным
         /// </summary>
